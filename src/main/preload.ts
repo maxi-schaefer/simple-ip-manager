@@ -1,6 +1,5 @@
 // Disable no-unused-vars, broken for spread args
 /* eslint no-unused-vars: off */
-import { Channel } from 'diagnostics_channel';
 import { contextBridge, ipcRenderer, IpcRendererEvent } from 'electron';
 
 export type Channels = 'ipc-example' | 'load-ip-profiles' | 'delete-ip-profile';

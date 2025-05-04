@@ -5,12 +5,6 @@ import { IPProfile } from './types';
 import { getNetworkAdapters, resetAllAdapters, updateNetworkSettings } from './utils/network';
 import { deleteIPProfile, getAssignedProfileForAdapter, loadIPProfiles, removeProfileFromAdapter, saveIPProfile } from './utils/profiles';
 
-export const showNotification = (title: string, body: string) => {
-  const iconPath = path.join(__dirname, 'assets', 'icon.png'); // Adjust path as needed
-
-  new Notification({ icon: iconPath, title, body }).show();
-};
-
 export let mainWindow: BrowserWindow | null = null;
 let tray: Tray | null = null;
 
@@ -149,6 +143,12 @@ ipcMain.on('maximize-app', () => {
   }
 });
 
+export const showNotification = (title: string, body: string) => {
+  const iconPath = path.join(__dirname, 'assets', 'icon.png'); // Adjust path as needed
+
+  new Notification({ icon: iconPath, title, body }).show();
+};
+
 // Create the main window
 const createWindow = async () => {
 
@@ -164,7 +164,7 @@ const createWindow = async () => {
     webPreferences: {
       preload: app.isPackaged
         ? path.join(__dirname, 'preload.js')
-        : path.join(__dirname, '../../.erb/dll/preload.js'),
+        : path.join(__dirname, '../../.sim/dll/preload.js'),
     },
   });
 
