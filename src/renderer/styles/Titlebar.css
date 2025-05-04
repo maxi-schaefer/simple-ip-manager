@@ -1,0 +1,88 @@
+/* =============================== Font Import =============================== */
+
+/* =============================== Titlebar =============================== */
+.topBar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    background-color: var(--background);
+    -webkit-user-select: none;
+}
+
+.topBar > .titleBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.titleBar > img {
+    margin-left: 10px;
+    height: 25px;
+    pointer-events: none;
+}
+
+.titleBar > .title {
+    width: 100%;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    -webkit-app-region: drag;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.topBar > .titleBarButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: calc(30px - 5px);
+    margin-right: 5px;
+}
+
+.titleBarButtons > .topButton {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--buttons-background);
+    border-radius: 50%;
+    margin: 5px;
+    transition: all .3s ease;
+}
+
+/* Minimize */
+.minimizeButton > svg {
+    background-color: var(--minimize-button);
+}
+.minimizeButton:hover {
+  background-color: var(--minimize-button);
+}
+
+/* Maximize */
+.maximizeBtn > svg {
+    background-color: var(--maximize-button);
+}
+.maximizeBtn:hover {
+  background-color: var(--maximize-button);
+}
+
+/* Close */
+.closeBtn > svg {
+    background-color: var(--close-button);
+}
+.closeBtn:hover {
+  background-color: var(--close-button);
+}
