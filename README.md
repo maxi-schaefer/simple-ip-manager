@@ -15,6 +15,8 @@
 
 ---
 
+## 📦 Download v1.0 [here](https://github.com/maxi-schaefer/simple-ip-manager/releases/download/1.0/Setup.exe)
+
 ## 🚀 Overview
 
 **Simple IP Manager** is a lightweight desktop tool that helps system administrators and network engineers manage and switch between multiple static IP configurations right from the system tray.
