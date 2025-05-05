@@ -6,10 +6,9 @@
 
 # 🖧 Simple IP Manager
 
-![GitHub release](https://img.shields.io/github/v/release/maxi-schaefer/simple-ip-manager?style=flat-square)
+![GitHub Release](https://img.shields.io/github/v/release/maxi-schaefer/simple-ip-manager?include_prereleases)
 ![License: MIT](https://img.shields.io/github/license/maxi-schaefer/simple-ip-manager?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-win-blue?style=flat-square)
-![Build Status](https://img.shields.io/github/actions/workflow/status/maxi-schaefer/simple-ip-manager/build.yml?branch=main&style=flat-square)
 
 > A blazing-fast IP profile switcher for sysadmins and network engineers — built with Electron, React, and TypeScript.
 
